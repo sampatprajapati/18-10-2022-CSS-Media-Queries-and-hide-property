@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>task 18-oct-2022</title>
+    </head>
+    <style>
+        @font-face {
+            font-family: "myfonts";
+            src: url("./fonts/GlowbloompersonaluseItalic-RpzjA.otf")
+                format("opentype");
+        }
+        @font-face {
+            font-family: "myfonts2";
+            src: url("./fonts/R.otf") format("opentype");
+        }
+        @font-face {
+            font-family: "myfonts3";
+            src: url("./fonts/Daisyway.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "myfonts4";
+            src: url("./fonts/original.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "myfonts5";
+            src: url("./fonts/air.otf") format("opentype");
+        }
+        /* Today we are learning the css Media Queries part-2.
+        and this is all about the range of the different screen resolutions .
+        so this is the first breakpoint of the website for Extra small devices.
+        this is called xs resoutuion its range(0px-575px).*/
+        @media screen and (min-width: 0px) and (max-width: 575px) {
+            .a {
+                width: 300px;
+                height: 300px;
+                background: mediumorchid;
+                border: 10px double black;
+                font-size: 5em;
+                text-align: center;
+                line-height: 300px;
+                margin: auto;
+                font-family: "myfonts", cusive;
+            }
+        }
+        /* this is second breakpoint and its called small(sm) resolution. its range (576px-767px).*/
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+            .a {
+                width: 400px;
+                height: 400px;
+                background: blue;
+                border: 10px double black;
+                font-size: 7em;
+                text-align: center;
+                line-height: 400px;
+                margin: auto;
+                font-family: "myfonts", cusive;
+                display: none;
+            }
+        }
+        /* this is third breakpoint and its called medium(md) resolution. its range (576px-767px).*/
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            .a {
+                width: 400px;
+                height: 400px;
+                background: yellow;
+                border: 10px double black;
+                font-size: 8em;
+                text-align: center;
+                line-height: 400px;
+                margin: auto;
+                color: black;
+                font-family: "myfonts2", cusive;
+                border-radius: 400px;
+            }
+        }
+        /* this is fourth breakpoint and its called Large(lg) Resolution. its range (992px-1199px).*/
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+            .a {
+                width: 500px;
+                height: 500px;
+                background: black;
+                border: 10px outset red;
+                font-size: 5em;
+                text-align: center;
+                line-height: 500px;
+                margin: auto;
+                color: white;
+                font-family: "myfonts3", cusive;
+                border-radius: 100px;
+                display: none;
+            }
+        }
+        /* this is fifth breakpoint and its called  Extra Large(xl) Resolution. its range (1200px-1399px).*/
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+            .a {
+                width: 600px;
+                height: 600px;
+                background: rgb(5, 99, 99);
+                border: 10px dotted black;
+                font-size: 9em;
+                text-align: center;
+                line-height: 600px;
+                margin: auto;
+                color: black;
+                font-family: "myfonts4", cusive;
+                border-radius: 600px;
+            }
+        }
+        /* this is sixth breakpoint and its called  Extra Extra Large(xxl) Resolution. its range (1400px-...px).*/
+        @media screen and (min-width: 1400px) {
+            .a {
+                width: 500px;
+                height: 500px;
+                background: rgb(122, 7, 7);
+                border: 10px dotted black;
+                font-size: 6em;
+                text-align: center;
+                line-height: 500px;
+                margin: auto;
+                color: white;
+                font-family: "myfonts5", cusive;
+                border-radius: 200px;
+                display: none;
+            }
+        }
+    </style>
+    <body>
+        <div class="a">OKLABS</div>
+    </body>
+</html>
